@@ -15,7 +15,7 @@ try:
     time_script_run = dt.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')  
     filename="{}_historical_output.json".format(time_script_run)
 
-    myclient = MongoClient("mongodb+srv://bazman:bhavan2000@twitter.fxec6.mongodb.net/test") 
+    myclient = MongoClient("mongodb+srv://<username>:<password>@<mongo_database>") #This will be available in your MongoDB 
     db = myclient["Twitter_Historical"]
     Collection = db[filename]
 
