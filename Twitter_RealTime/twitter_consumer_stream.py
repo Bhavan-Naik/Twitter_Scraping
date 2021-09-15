@@ -11,7 +11,7 @@ try:
             group_id="twitter_consumer"
         )
 
-    myclient = MongoClient("mongodb+srv://bazman:bhavan2000@twitter.fxec6.mongodb.net/test") 
+    myclient = MongoClient("mongodb+srv://<username>:<password>@<mongo_database>") #This will be available in your MongoDB 
     db = myclient["Twitter_RealTime"]
     Collection = db["tweet"]
 
